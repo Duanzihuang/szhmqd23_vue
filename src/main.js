@@ -64,6 +64,7 @@ import store from './store'
 
 // 创建根实例，整个项目中只需要有一个根实例
 // 使用render函数，渲染根组件
+// 我更改了代码
 new Vue({
   // 渲染根组件
   render: h => h(App),
