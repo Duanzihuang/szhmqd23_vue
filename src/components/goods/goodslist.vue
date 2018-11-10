@@ -107,10 +107,10 @@
 </template>
 
 <style scoped>
-    .el-carousel__item img{
-        width:100%;
-        height: 100%;
-    }
+.el-carousel__item img {
+  width: 100%;
+  height: 100%;
+}
 </style>
 
 
@@ -121,7 +121,7 @@ export default {
       // 头部的数据
       goodsData: {},
       // 列表的数据
-      goodsList:[]
+      goodsList: []
     }
   },
   created() {
@@ -132,19 +132,21 @@ export default {
     this.getGoodsListData()
   },
   methods: {
-    getGoodsData() {
+    async getGoodsData() {
       const url = `site/goods/gettopdata/goods`
 
-      this.$axios.get(url).then(response => {
-        this.goodsData = response.data.message
-      })
-    },
-    getGoodsListData(){
-        const url = `site/goods/getgoodsgroup`
+      //   this.$axios.get(url).then(response => {
+      //     this.goodsData = response.data.message
+      //   })
 
-        this.$axios.get(url).then(response => {
-        this.goodsList = response.data.message
-      })
+      const response = await this.$axios.get(url)
+      this.goodsData = response.data.message
+    },
+    async getGoodsListData() {
+      const url = `site/goods/getgoodsgroup`
+
+      const response = await this.$axios.get(url)
+      this.goodsList = response.data.message
     }
   }
 }

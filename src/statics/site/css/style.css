@@ -47,7 +47,8 @@ table { border-collapse:collapse; border-spacing:0; }
 .left-690{ position:relative; float:left; margin:0 0 0 15px; padding:0; width:690px; }
 .left-455{ position:relative; float:left; margin:0 0 0 15px; padding:0; width:455px; }
 .left-260{ position:relative; display:block; float:left; width:260px; overflow:hidden; }
-.left-220{ position:relative; display:block; float:left; margin:0 0 0 15px; padding:0; width:220px; _overflow:hidden; }
+/* .left-220{ position:relative; display:block; float:left; margin:0 0 0 15px; padding:0; width:220px; _overflow:hidden; } */
+.left-220{ position:relative; display:block; float:left; margin:0 0 0 15px; padding:0; width:220px;}
 .left-auto{ position:relative; display:block; margin:0 275px 0 0; overflow:hidden; _zoom:1; }
 .right-260{ position:relative; display:block; float:right; width:260px; overflow:hidden; }
 .right-auto{ position:relative; display:block; margin:0 0 0 275px; overflow:hidden; _zoom:1; }
